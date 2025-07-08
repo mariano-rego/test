@@ -18,17 +18,24 @@
     nav strong {
       color: #0d3b66;
     }
-    figure img {
-      width: 100%;
-      border-radius: 8px;
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin: 2rem 0;
     }
-    figcaption a {
-      color: #0d3b66;
-      font-weight: bold;
+    .image-container img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
     section[aria-label="Subscribe example"] {
       background-color: #e0f0ff;
       padding: 3rem 0;
+    }
+    figcaption a {
+      color: #0d3b66;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -55,16 +62,14 @@
           <h3>¡Mejor juntos, incluso separados!</h3>
         </hgroup>
         <p>MealPrep Squad es la forma divertida y colaborativa de preparar tus comidas semanales. Crea grupos con amigos, reparte las recetas, y comparte tus platos sin salir de casa. Así, cada uno cocina algo distinto y todos disfrutan variedad en sus comidas.</p>
-        <figure>
-          <img src="img_1">
-        </figure>
+        
+        <!-- IMAGE SECTION -->
+        <div class="image-container">
+          <img src="amigos-cocinando.png" alt="Amigos cocinando cada uno en su casa coordinados por una app">
+        </div>
 
         <h3>Gamification que motiva</h3>
         <p>Con nuestro sistema de puntos y retos, cocinar nunca ha sido tan entretenido. Gana trofeos, desbloquea insignias y compite con tus amigos en el ranking de chefs.</p>
-        <figure>
-          <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-4GBHZn59DQ2XhN4RL3O8X7FD/user-v7MS1E8b9eTzIY82CvyaN7vQ/img-e729adc4-0370-4859-9d2c-cb5ae7fa0dd7.png?st=2025-07-08T14%3A00%3A00Z&se=2025-07-08T16%3A00%3A00Z&sp=r&sv=2022-11-02&sr=b&rscd=inline&rsct=image/png&skoid=abc123&sktid=xyz456&skt=2025-07-08T14%3A00%3A00Z&ske=2025-07-08T16%3A00%3A00Z&sks=b&skv=2022-11-02&sig=someSignature" alt="Leaderboard gamification MealPrep Squad">
-          <figcaption><a href="https://oaidalleapiprodscus.blob.core.windows.net/private/org-4GBHZn59DQ2XhN4RL3O8X7FD/user-v7MS1E8b9eTzIY82CvyaN7vQ/img-e729adc4-0370-4859-9d2c-cb5ae7fa0dd7.png" target="_blank">Ver leaderboard completo</a></figcaption>
-        </figure>
 
         <h3>Propuestas de recetas semanales</h3>
         <p>¿No sabes qué cocinar? Cada semana te proponemos recetas balanceadas y deliciosas que se reparten entre los integrantes de tu squad.</p>
